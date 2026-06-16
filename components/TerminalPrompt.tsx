@@ -37,15 +37,15 @@ export default function TerminalPrompt({ command }: TerminalPromptProps) {
       ref={containerRef}
       className="font-mono text-xs sm:text-sm mb-6 flex items-center select-none"
     >
-      <span className="text-emerald-500 font-bold">thiroshika@portfolio</span>
+      <span className="text-slate-300 font-bold">thiroshika@portfolio</span>
       <span className="text-slate-500 font-bold">:</span>
-      <span className="text-blue-500 font-bold">~$</span>
+      <span className="text-slate-400 font-bold">~$</span>
       <span className="text-slate-100 font-bold ml-2">
         {displayedText}
       </span>
-      {/* Blinking green terminal cursor */}
+      {/* Blinking grey terminal cursor */}
       <span
-        className={`inline-block w-2.5 h-4 bg-emerald-500 ml-1.5 ${
+        className={`inline-block w-2.5 h-4 bg-slate-400 ml-1.5 ${
           isTypingComplete ? "animate-pulse" : ""
         }`}
         style={{

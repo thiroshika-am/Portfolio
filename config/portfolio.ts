@@ -28,13 +28,13 @@ export interface PortfolioConfig {
 
 export const portfolioConfig: PortfolioConfig = {
   personal: {
-    name: "Thiroshika A M",
+    name: "Thiroshika",
     title: "AI & Data Science Student",
-    tagline: "Building AI-powered applications, developer tools, and data-driven solutions.",
+    tagline: "Welcome to my terminal! Exploring technology through projects, experimentation, and continuous learning. Every build is a step toward becoming a better engineer.",
     subTagline: "Focusing on systems, algorithms, and full-stack machine learning tooling.",
-    email: "thiroshika@example.com",
-    linkedin: "https://linkedin.com/in/thiroshika",
-    github: "https://github.com/thiroshika",
+    email: "thiroshikaam@gmail.com",
+    linkedin: "https://www.linkedin.com/in/thiroshika-a-m/",
+    github: "https://github.com/thiroshika-am",
     resumeUrl: "#resume",
   },
   skills: [
@@ -60,28 +60,28 @@ export const portfolioConfig: PortfolioConfig = {
       title: "Resume Analyzer",
       description: "An AI-powered ATS resume parsing tool that evaluates compliance, matches core keywords with job descriptions, and provides detailed suggestions for improvement.",
       tags: ["Python", "NLP", "React", "Next.js", "Tailwind CSS"],
-      githubUrl: "https://github.com/thiroshika/resume-analyzer",
+      githubUrl: "https://github.com/thiroshika-am/resume-analyzer",
       liveUrl: "https://resume-analyzer.example.com"
     },
     {
       title: "AI Career Coach",
       description: "An intelligent guidance platform offering mock interview simulations, customized roadmap suggestions, and skill gap analysis for engineering aspirants.",
       tags: ["Next.js", "TypeScript", "OpenAI API", "LangChain", "Tailwind CSS"],
-      githubUrl: "https://github.com/thiroshika/ai-career-coach",
+      githubUrl: "https://github.com/thiroshika-am/ai-career-coach",
       liveUrl: "https://career-coach.example.com"
     },
     {
       title: "LeetCode Time Tracker",
       description: "A developer tool designed to track coding speeds, compile patterns of completed problems, and map progress against average benchmark times.",
       tags: ["React", "JavaScript", "Chrome Extension API", "Chart.js", "CSS3"],
-      githubUrl: "https://github.com/thiroshika/leetcode-tracker",
+      githubUrl: "https://github.com/thiroshika-am/leetcode-tracker",
       liveUrl: "https://leetcode-tracker.example.com"
     },
     {
       title: "Portfolio Website",
       description: "A premium, terminal-inspired developer portfolio designed to present clean, structured software engineering achievements.",
       tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      githubUrl: "https://github.com/thiroshika/portfolio",
+      githubUrl: "https://github.com/thiroshika-am/portfolio",
       liveUrl: "https://portfolio.example.com"
     }
   ]

@@ -7,7 +7,7 @@ import InteractiveBackground from "@/components/InteractiveBackground";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#0B0B0B] text-[#F1F5F9] font-sans selection:bg-emerald-500/20 selection:text-emerald-400">
+    <div className="flex flex-col min-h-screen bg-[#0B0B0B] text-[#F1F5F9] font-sans selection:bg-white/10 selection:text-white">
       {/* Interactive Node/Grid Background Canvas */}
       <InteractiveBackground />
 
@@ -38,7 +38,7 @@ export default function Home() {
 
           {/* System metadata */}
           <div className="text-[10px] text-slate-600 font-bold uppercase tracking-wider">
-            &copy; {new Date().getFullYear()} Thiroshika A M &bull; Shell Exited
+            &copy; {new Date().getFullYear()} Thiroshika &bull; Shell Exited
           </div>
 
         </div>

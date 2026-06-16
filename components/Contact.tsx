@@ -26,7 +26,7 @@ export default function Contact() {
       value: portfolioConfig.personal.email,
       href: `mailto:${portfolioConfig.personal.email}`,
       actionText: "Send message",
-      color: "hover:border-emerald-500/20",
+      color: "hover:border-white/10",
       icon: (
         <svg
           viewBox="0 0 24 24"
@@ -35,7 +35,7 @@ export default function Contact() {
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="w-5 h-5 text-slate-400 group-hover:text-emerald-400 transition-colors"
+          className="w-5 h-5 text-slate-400 group-hover:text-white transition-colors"
         >
           <rect width="20" height="16" x="2" y="4" rx="2" />
           <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
@@ -44,7 +44,7 @@ export default function Contact() {
     },
     {
       name: "LinkedIn",
-      value: "linkedin.com/in/thiroshika",
+      value: "linkedin.com/in/thiroshika-a-m",
       href: portfolioConfig.personal.linkedin,
       actionText: "Connect now",
       color: "hover:border-blue-500/20",
@@ -66,7 +66,7 @@ export default function Contact() {
     },
     {
       name: "GitHub",
-      value: "github.com/thiroshika",
+      value: "github.com/thiroshika-am",
       href: portfolioConfig.personal.github,
       actionText: "Follow profiles",
       color: "hover:border-white/20",
@@ -90,7 +90,7 @@ export default function Contact() {
       value: "Download document",
       href: portfolioConfig.personal.resumeUrl,
       actionText: "Download PDF",
-      color: "hover:border-emerald-500/20",
+      color: "hover:border-white/10",
       icon: (
         <svg
           viewBox="0 0 24 24"
@@ -99,7 +99,7 @@ export default function Contact() {
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="w-5 h-5 text-slate-400 group-hover:text-emerald-400 transition-colors"
+          className="w-5 h-5 text-slate-400 group-hover:text-white transition-colors"
         >
           <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
           <path d="M14 2v4a2 2 0 0 0 2 2h4" />
@@ -130,8 +130,8 @@ export default function Contact() {
             <motion.a
               key={idx}
               href={contact.href}
-              target={contact.name !== "Resume" ? "_blank" : undefined}
-              rel={contact.name !== "Resume" ? "noreferrer" : undefined}
+              target={contact.name !== "Resume" && contact.name !== "Email" ? "_blank" : undefined}
+              rel={contact.name !== "Resume" && contact.name !== "Email" ? "noreferrer" : undefined}
               variants={itemVariants}
               whileHover={{ y: -4 }}
               className={`group bg-[#0E0E0E] p-6 border border-white/5 flex flex-col justify-between transition-all duration-300 ${contact.color}`}

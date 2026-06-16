@@ -1,22 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-sans: 'Plus Jakarta Sans', var(--font-geist-sans), sans-serif;
-  --font-mono: 'JetBrains Mono', var(--font-geist-mono), monospace;
+  --font-sans: 'Fira Code', 'Courier New', monospace;
+  --font-mono: 'Fira Code', 'Courier New', monospace;
 }
 
 :root {
   --background: #0B0B0B;
   --foreground: #F1F5F9; /* Gray-100 high-contrast */
-  --primary: #10B981;    /* Emerald green cursor/accent */
-  --secondary: #3B82F6;  /* Blue accent */
+  --primary: #D1D5DB;    /* Grey/silver cursor/accent */
+  --secondary: #9CA3AF;  /* Medium grey accent */
 }
 
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans);
+  font-family: var(--font-mono);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }

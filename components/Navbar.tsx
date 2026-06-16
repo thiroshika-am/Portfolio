@@ -4,19 +4,7 @@ import { useState, useEffect } from "react";
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState("home");
-  const [time, setTime] = useState("");
 
-  useEffect(() => {
-    const updateTime = () => {
-      const date = new Date();
-      setTime(
-        date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false })
-      );
-    };
-    updateTime();
-    const interval = setInterval(updateTime, 1000);
-    return () => clearInterval(interval);
-  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,10 +39,9 @@ export default function Navbar() {
         
         {/* Terminal window mock header path */}
         <div className="flex items-center space-x-2.5">
-          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+          <span className="w-1.5 h-1.5 rounded-full bg-slate-400 animate-pulse" />
           <span className="text-slate-200 font-bold">thiroshika@portfolio</span>
-          <span className="text-slate-500 font-bold">:</span>
-          <span className="text-blue-400">~/{activeSection === "home" ? "" : activeSection}</span>
+          <span className="text-slate-400 font-bold">:~$</span>
         </div>
 
         {/* Directory links styled as brackets shell executables */}
@@ -64,7 +51,7 @@ export default function Navbar() {
               key={link.id}
               href={link.href}
               className={`transition-colors font-medium ${
-                activeSection === link.id ? "text-emerald-400 font-bold" : "text-slate-400 hover:text-slate-200"
+                activeSection === link.id ? "text-white font-bold" : "text-slate-400 hover:text-slate-200"
               }`}
             >
               {link.name}
@@ -72,10 +59,7 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Local time and terminal stats */}
-        <div className="text-slate-500 font-semibold flex items-center space-x-2">
-          <span>{time || "12:00:00"}</span>
-        </div>
+
 
       </div>
     </nav>

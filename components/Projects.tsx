@@ -44,12 +44,12 @@ export default function Projects() {
               key={idx}
               variants={cardVariants}
               whileHover={{ y: -6, transition: { duration: 0.2 } }}
-              className="group relative bg-[#0E0E0E] border border-white/5 hover:border-emerald-500/20 transition-all duration-300 flex flex-col justify-between overflow-hidden"
+              className="group relative bg-[#0E0E0E] border border-white/5 hover:border-white/10 transition-all duration-300 flex flex-col justify-between overflow-hidden"
             >
               {/* Subtle top indicator bar (Terminal hybrid details) */}
               <div className="flex items-center justify-between px-5 py-3 border-b border-white/5 bg-[#121212] font-mono text-[10px] sm:text-xs text-slate-500 select-none">
                 <span className="flex items-center space-x-2">
-                  <span className="w-2 h-2 rounded-full bg-slate-800 group-hover:bg-emerald-500 transition-colors" />
+                  <span className="w-2 h-2 rounded-full bg-slate-800 group-hover:bg-slate-400 transition-colors" />
                   <span>0{idx + 1}_exec.bin</span>
                 </span>
                 <span className="text-slate-600">[SYS_REG_0{idx + 1}]</span>
@@ -59,7 +59,7 @@ export default function Projects() {
               <div className="p-6 sm:p-8 space-y-6">
                 <div className="space-y-2">
                   {/* Category/Path */}
-                  <div className="text-xs font-mono text-emerald-400 select-none">
+                  <div className="text-xs font-mono text-slate-400 select-none">
                     path: /projects/{project.title.toLowerCase().replace(/\s+/g, "-")}
                   </div>
                   {/* Title */}
@@ -116,7 +116,7 @@ export default function Projects() {
                     href={project.liveUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center space-x-1.5 text-emerald-400 hover:text-emerald-300 transition-colors duration-150 py-2 font-bold"
+                    className="flex items-center space-x-1.5 text-slate-300 hover:text-white transition-colors duration-150 py-2 font-bold"
                   >
                     <svg
                       viewBox="0 0 24 24"
