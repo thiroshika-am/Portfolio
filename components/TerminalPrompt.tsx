@@ -16,9 +16,6 @@ export default function TerminalPrompt({ command }: TerminalPromptProps) {
   useEffect(() => {
     if (!isInView) return;
 
-    setDisplayedText("");
-    setIsTypingComplete(false);
-
     let index = 0;
     const intervalTime = 60;
 
@@ -33,7 +30,11 @@ export default function TerminalPrompt({ command }: TerminalPromptProps) {
       }
     }, intervalTime);
 
-    return () => clearInterval(typingTimer);
+    return () => {
+      clearInterval(typingTimer);
+      setDisplayedText("");
+      setIsTypingComplete(false);
+    };
   }, [command, isInView]);
 
   return (

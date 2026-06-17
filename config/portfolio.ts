@@ -2,7 +2,7 @@ export interface Project {
   title: string;
   description: string;
   tags: string[];
-  githubUrl: string;
+  githubUrl?: string;
   liveUrl?: string;
 }
 
@@ -66,23 +66,17 @@ export const portfolioConfig: PortfolioConfig = {
     {
       title: "AI Career Coach",
       description: "An intelligent guidance platform offering mock interview simulations, customized roadmap suggestions, and skill gap analysis for engineering aspirants.",
-      tags: ["Next.js", "TypeScript", "OpenAI API", "LangChain", "Tailwind CSS"],
-      githubUrl: "https://github.com/thiroshika-am/ai-career-coach",
-      liveUrl: "https://career-coach.example.com"
+      tags: ["Next.js", "TypeScript", "OpenAI API", "LangChain", "Tailwind CSS"]
     },
     {
       title: "LeetCode Time Tracker",
       description: "A developer tool designed to track coding speeds, compile patterns of completed problems, and map progress against average benchmark times.",
-      tags: ["React", "JavaScript", "Chrome Extension API", "Chart.js", "CSS3"],
-      githubUrl: "https://github.com/thiroshika-am/leetcode-tracker",
-      liveUrl: "https://leetcode-tracker.example.com"
+      tags: ["React", "JavaScript", "Chrome Extension API", "Chart.js", "CSS3"]
     },
     {
       title: "Portfolio Website",
       description: "A premium, terminal-inspired developer portfolio designed to present clean, structured software engineering achievements.",
-      tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      githubUrl: "https://github.com/thiroshika-am/portfolio",
-      liveUrl: "https://portfolio.example.com"
+      tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"]
     }
   ]
 };

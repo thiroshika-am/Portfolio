@@ -32,7 +32,7 @@ export default function Home() {
             <span className="text-slate-500">:</span>
             <span className="text-blue-500 font-bold">~$</span>
             <span className="text-slate-300 font-bold ml-2">
-              echo "Thanks for visiting!" && exit
+              {"echo \"Thanks for visiting!\" && exit"}
             </span>
           </div>
 
