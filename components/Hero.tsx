@@ -59,16 +59,16 @@ export default function Hero() {
         >
           <motion.div variants={itemVariants} className="space-y-2">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight leading-[1.15] font-mono">
-              Thiroshika
+              {portfolioConfig.personal.name}
             </h1>
           </motion.div>
 
           <motion.div variants={itemVariants} className="space-y-3 flex flex-col items-center">
             <h2 className="text-base sm:text-lg md:text-xl font-bold text-slate-100 font-mono tracking-tight">
-              AI & Data Science Student
+              {portfolioConfig.personal.title}
             </h2>
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-2xl font-mono">
-              Welcome to my terminal! Exploring technology through projects, experimentation, and continuous learning. Every build is a step toward becoming a better engineer.
+              {portfolioConfig.personal.tagline}
             </p>
           </motion.div>
 

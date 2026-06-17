@@ -16,12 +16,16 @@ export default function TerminalPrompt({ command }: TerminalPromptProps) {
   useEffect(() => {
     if (!isInView) return;
 
+    setDisplayedText("");
+    setIsTypingComplete(false);
+
     let index = 0;
     const intervalTime = 60;
 
     const typingTimer = setInterval(() => {
       if (index < command.length) {
-        setDisplayedText((prev) => prev + command.charAt(index));
+        const char = command.charAt(index);
+        setDisplayedText((prev) => prev + char);
         index++;
       } else {
         clearInterval(typingTimer);

@@ -30,7 +30,7 @@ export const portfolioConfig: PortfolioConfig = {
   personal: {
     name: "Thiroshika",
     title: "AI & Data Science Student",
-    tagline: "Welcome to my terminal! Exploring technology through projects, experimentation, and continuous learning. Every build is a step toward becoming a better engineer.",
+    tagline: "Welcome to my terminal! From ambitious ideas to working products, I enjoy building software, exploring new technologies, and learning through every challenge.",
     subTagline: "Focusing on systems, algorithms, and full-stack machine learning tooling.",
     email: "thiroshikaam@gmail.com",
     linkedin: "https://www.linkedin.com/in/thiroshika-a-m/",
@@ -43,16 +43,16 @@ export const portfolioConfig: PortfolioConfig = {
       skills: ["Java", "Python", "C", "JavaScript", "TypeScript", "SQL"]
     },
     {
-      category: "Web Development",
-      skills: ["HTML", "CSS", "Tailwind CSS", "React", "Next.js"]
+      category: "Frontend",
+      skills: ["HTML5", "CSS3", "React", "Next.js", "Tailwind CSS"]
+    },
+    {
+      category: "Database & Tools",
+      skills: ["Git", "GitHub", "SQL", "MySQL", "Docker", "VS Code"]
     },
     {
       category: "Data Science",
-      skills: ["NumPy", "Pandas", "Matplotlib", "Machine Learning"]
-    },
-    {
-      category: "Tools",
-      skills: ["Git", "GitHub", "VS Code", "Postman", "Linux"]
+      skills: ["Data Wrangling", "Exploratory Data Analysis (EDA)", "NumPy", "Pandas", "Matplotlib", "Seaborn"]
     }
   ],
   projects: [

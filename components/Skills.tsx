@@ -36,9 +36,6 @@ export default function Skills() {
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10"
         >
           {portfolioConfig.skills.map((category, idx) => {
-            // Map "Web Development" to "Frontend" as requested by user
-            const displayName = category.category === "Web Development" ? "Frontend" : category.category;
-
             return (
               <motion.div
                 key={idx}
@@ -47,7 +44,7 @@ export default function Skills() {
               >
                 {/* Category Header */}
                 <h3 className="text-xs font-bold text-white uppercase tracking-widest font-sans border-b border-white/5 pb-4 mb-4 select-none">
-                  {displayName}
+                  {category.category}
                 </h3>
 
                 {/* Skill Badges Container */}
