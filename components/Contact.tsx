@@ -126,43 +126,58 @@ export default function Contact() {
           viewport={{ once: true, margin: "-100px" }}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10"
         >
-          {contacts.map((contact, idx) => (
-            <motion.a
-              key={idx}
-              href={contact.href}
-              target={contact.name !== "Resume" && contact.name !== "Email" ? "_blank" : undefined}
-              rel={contact.name !== "Resume" && contact.name !== "Email" ? "noreferrer" : undefined}
-              variants={itemVariants}
-              whileHover={{ y: -4 }}
-              className={`group bg-[#0E0E0E] p-6 border border-white/5 flex flex-col justify-between transition-all duration-300 ${contact.color}`}
-            >
-              <div className="space-y-4">
-                {/* Header Icon + Label */}
-                <div className="flex items-center justify-between">
-                  <span className="text-[10px] font-bold font-mono tracking-widest text-slate-500 uppercase select-none">
-                    [{contact.name}]
-                  </span>
-                  {contact.icon}
+          {contacts.map((contact, idx) => {
+            const isEmail = contact.name === "Email";
+            const CardComponent = isEmail ? motion.div : motion.a;
+
+            return (
+              <CardComponent
+                key={idx}
+                {...(isEmail
+                  ? {}
+                  : {
+                      href: contact.href,
+                      target: contact.name !== "Resume" ? "_blank" : undefined,
+                      rel: contact.name !== "Resume" ? "noreferrer" : undefined,
+                      whileHover: { y: -4 },
+                    })}
+                variants={itemVariants}
+                className={`group bg-[#0E0E0E] p-6 border border-white/5 flex flex-col justify-between transition-all duration-300 ${
+                  isEmail ? "" : contact.color
+                }`}
+              >
+                <div className="space-y-4">
+                  {/* Header Icon + Label */}
+                  <div className="flex items-center justify-between">
+                    <span className="text-[10px] font-bold font-mono tracking-widest text-slate-500 uppercase select-none">
+                      [{contact.name}]
+                    </span>
+                    {contact.icon}
+                  </div>
+
+                  {/* Details */}
+                  <div className="space-y-1">
+                    <div className="text-sm font-bold text-white font-sans truncate select-text">
+                      {contact.value}
+                    </div>
+                    {!isEmail && (
+                      <div className="text-[10px] font-mono text-slate-500">
+                        action: {contact.actionText.toLowerCase().replace(/\s+/g, "_")}
+                      </div>
+                    )}
+                  </div>
                 </div>
 
-                {/* Details */}
-                <div className="space-y-1">
-                  <div className="text-sm font-bold text-white font-sans truncate">
-                    {contact.value}
+                {/* Arrow Indicator */}
+                {!isEmail && (
+                  <div className="mt-6 flex items-center justify-between font-mono text-[10px] text-slate-400 group-hover:text-white transition-colors duration-150 select-none">
+                    <span>[ interact ]</span>
+                    <span>-&gt;</span>
                   </div>
-                  <div className="text-[10px] font-mono text-slate-500">
-                    action: {contact.actionText.toLowerCase().replace(/\s+/g, "_")}
-                  </div>
-                </div>
-              </div>
-
-              {/* Arrow Indicator */}
-              <div className="mt-6 flex items-center justify-between font-mono text-[10px] text-slate-400 group-hover:text-white transition-colors duration-150 select-none">
-                <span>[ interact ]</span>
-                <span>-&gt;</span>
-              </div>
-            </motion.a>
-          ))}
+                )}
+              </CardComponent>
+            );
+          })}
         </motion.div>
       </div>
     </section>

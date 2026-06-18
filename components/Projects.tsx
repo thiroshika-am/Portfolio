@@ -78,7 +78,7 @@ export default function Projects() {
                   {project.tags.map((tag, tIdx) => (
                     <span
                       key={tIdx}
-                      className="px-2 py-0.5 rounded-none border border-white/5 bg-white/5 text-slate-350 select-none"
+                      className="px-2 py-0.5 rounded-none border border-white/5 bg-white/5 text-slate-400 select-none"
                     >
                       {tag}
                     </span>

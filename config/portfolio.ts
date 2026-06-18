@@ -60,18 +60,18 @@ export const portfolioConfig: PortfolioConfig = {
       title: "Resume Analyzer",
       description: "An AI-powered ATS resume parsing tool that evaluates compliance, matches core keywords with job descriptions, and provides detailed suggestions for improvement.",
       tags: ["Python", "NLP", "React", "Next.js", "Tailwind CSS"],
-      githubUrl: "https://github.com/thiroshika-am/resume-analyzer",
-      liveUrl: "https://resume-analyzer.example.com"
+      githubUrl: "https://github.com/thiroshika-am/resume-analyzer"
+    },
+    {
+      title: "VisionX – Smart AI guide",
+      description: "An assistive wearable device designed to improve navigation and accessibility through real-time obstacle detection and intelligent feedback.",
+      tags: ["Python", "Computer Vision", "IoT", "Embedded Systems"],
+      githubUrl: "https://github.com/thiroshika-am/blind_obstacle-_dection"
     },
     {
       title: "AI Career Coach",
       description: "An intelligent guidance platform offering mock interview simulations, customized roadmap suggestions, and skill gap analysis for engineering aspirants.",
       tags: ["Next.js", "TypeScript", "OpenAI API", "LangChain", "Tailwind CSS"]
-    },
-    {
-      title: "LeetCode Time Tracker",
-      description: "A developer tool designed to track coding speeds, compile patterns of completed problems, and map progress against average benchmark times.",
-      tags: ["React", "JavaScript", "Chrome Extension API", "Chart.js", "CSS3"]
     },
     {
       title: "Portfolio Website",
