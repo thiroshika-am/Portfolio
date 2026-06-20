@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Thiroshika Portfolio",
-  description: "B.Tech Student in Artificial Intelligence & Data Science at MKCE. Exploring software engineering, machine learning, and data-driven systems.",
+  description: "Exploring machine learning and data-driven systems.",
 };
 
 export default function RootLayout({

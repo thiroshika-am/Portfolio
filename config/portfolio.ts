@@ -29,7 +29,7 @@ export interface PortfolioConfig {
 export const portfolioConfig: PortfolioConfig = {
   personal: {
     name: "Thiroshika",
-    title: "AI & Data Science Student",
+    title: "",
     tagline: "Welcome to my terminal! From ambitious ideas to working products, I enjoy building software, exploring new technologies, and learning through every challenge.",
     subTagline: "Focusing on systems, algorithms, and full-stack machine learning tooling.",
     email: "thiroshikaam@gmail.com",
