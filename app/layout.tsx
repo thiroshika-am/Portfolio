@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Thiroshika DEV",
+  title: "Thiroshika Portfolio",
   description: "B.Tech Student in Artificial Intelligence & Data Science at MKCE. Exploring software engineering, machine learning, and data-driven systems.",
 };
 
